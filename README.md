@@ -78,4 +78,5 @@ Then, implement the optional callbacks method.
     }
 ```
 **Check if an Ad is ready to be shown**
+
 You can call `TremorVideoAd.IsAdReady()` to check if an ad is ready to be shown. 
