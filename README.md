@@ -66,15 +66,25 @@ If your application would like to be notified of ad status, loading, start or co
 Then, implement the optional callbacks method.
 ```
     void AdReady (string success) {
-        Debug.Log ("Tremor Video ad ready callback");
+    	if(success.Equals("true")) {
+            Debug.Log ("Tremor Video ad is ready.");
+        } else {
+            Debug.Log ("Tremor Video ad is NOT ready.");
+        }
     }
 
     void AdStart {
 	Debug.Log ("Tremor Video ad start callback");
     }
 
-    void AdComplete (string responseCode) { 
-        Debug.Log ("Tremor Video ad complete callback");
+    void AdComplete (string responseCode) {
+    	if(responseCode.Equals("1")) {
+    	    Debug.Log ("Tremor Video ad was completed successfully");
+    	} else if (responseCode.Equals("0")) {
+    	    Debug.Log ("No Tremor Video as was available at the time");
+    	} else {
+    	    Debug.Log ("Error occurred while showing Tremor Video ad");
+    	}
     }
 ```
 **Check if an Ad is ready to be shown**
