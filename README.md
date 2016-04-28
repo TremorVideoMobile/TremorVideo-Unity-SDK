@@ -11,7 +11,7 @@ The Unity Plugin ships as a zip file, inside zip file includes:
  
 # iOS and Android support and requirements
 - Please visit [Tremor Video Unity API Doc](http://tremorvideomobile.github.io/unity/TremorVideoUnityPlugin.htm) which contains details of each API definitions.
-- Please visit [TremorVideo-iOS-SDK](https://github.com/TremorVideoMobile/TremorVideo-iOS-SDK) integration documentation to review iOS SDK requirements on minimum OS support, required frameworks, iOS 9 support, app orientation requirements
+- Please visit [TremorVideo-iOS-SDK](https://github.com/TremorVideoMobile/TremorVideo-iOS-SDK) integration documentation to review iOS SDK requirements on minimum OS support, required frameworks, iOS 9 support, app orientation requirements. (Note for iOS: depending on the Unity verion you use, in the build phases, you may need to add libz.tbd to your list of frameworks in the exported XCode project).
 - Please visit [TremorVideo-Android-SDK](https://github.com/TremorVideoMobile/TremorVideo-Android-SDK) integration documentation to review Android SDK requirements on minimum OS support, Google Play Service requirement and required permission.
 
 # Integrate Unity Package into your Unity Project
