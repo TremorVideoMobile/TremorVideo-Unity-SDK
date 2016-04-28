@@ -5,7 +5,7 @@
 
 # To Download
 Please contact the publisher team at Tremor Video to download the Unity Plugin which includes iOS and Android SDK 3.12
-The Unity Plugin ships as a zip file, inside zip file includes:
+The Unity Plugin ships as a zip file. The zip file includes:
 - **TremorVideo.unitypackage** which includes Unity Plugin and iOS Android SDK
 - **TremorVideoSample** which includes a sample app
  
@@ -15,9 +15,9 @@ The Unity Plugin ships as a zip file, inside zip file includes:
 - Please visit [TremorVideo-Android-SDK](https://github.com/TremorVideoMobile/TremorVideo-Android-SDK) integration documentation to review Android SDK requirements on minimum OS support, Google Play Service requirement and required permission.
 
 # Integrate Unity Package into your Unity Project
-Inside the sample app, there is C# file **TVEntryPoint.cs**, which provides a sample on how the uses API. All of the code you will need to call is contained in **Plugins/TremorVideo.cs**. [Tremor Video Unity API Doc](http://tremorvideomobile.github.io/unity/TremorVideoUnityPlugin.htm) contains details about each API definitions.
+Inside the sample app, there is a C# file **TVEntryPoint.cs**, which provides a sample of how to use the API. All of the code you will need to call is contained in **Plugins/TremorVideo.cs**. [Tremor Video Unity API Doc](http://tremorvideomobile.github.io/unity/TremorVideoUnityPlugin.htm) contains details about each API definitions.
 
-Follow the follow steps to Integrate Tremor SDK into your application. 
+Follow the below steps to Integrate the Tremor SDK into your application. 
 
 ### Step 1: Import the TermorVideo unity package
 From the Assets menu, select Import Assets->Custom Package to import: **TremorVideo.unitypackage**
@@ -63,7 +63,7 @@ If your application would like to be notified of ad status, loading, start or co
     TremorVideo.adCompleteDelegate = AdComplete;
 ```
 
-Then, implement the optional callbacks method.
+Then, implement the optional callback methods.
 ```
     void AdReady (string success) {
     	if(success.Equals("true")) {
