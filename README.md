@@ -4,7 +4,7 @@
 - Release Date: April 20th, 2016 
 
 # To Download
-Please contact the publisher team at Tremor Video to download the Unity Plugin which includes iOS and Android SDK 3.12
+Please [contact the publisher team](mailto: PublisherManagement@Tremorvideo.com)  at Tremor Video to download the Unity Plugin which includes iOS and Android SDK 3.12
 The Unity Plugin ships as a zip file. The zip file includes:
 - **TremorVideo.unitypackage** which includes Unity Plugin and iOS Android SDK
 - **TremorVideoSample** which includes a sample app
