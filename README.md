@@ -1,7 +1,7 @@
 # TremorVideo-Unity-SDK
-- Unity Plugin Version: 1.0.1
-- SDK Version: iOS SDK and Android SDK 3.12.0
-- Release Date: April 20th, 2016 
+- Unity Plugin Version: 1.0.2
+- SDK Version: iOS SDK 3.12.1 and Android SDK 3.12.1
+- Release Date: May 16th, 2016 
 - Release Note: Please visit [Unity SDK Releases Notes](https://github.com/TremorVideoMobile/TremorVideo-Unity-SDK/wiki/Unity-SDK-Release-Notes) to check details of each iOS SDK release.
 
 # To Download
@@ -62,6 +62,7 @@ If your application would like to be notified of ad status, loading, start or co
     TremorVideo.adReadyDelegate = AdReady;
     TremorVideo.adStartDelegate = AdStart;
     TremorVideo.adCompleteDelegate = AdComplete;
+    TremorVideo.adSkippedDelegate = AdSkipped;
 ```
 
 Then, implement the optional callback methods.
@@ -75,7 +76,7 @@ Then, implement the optional callback methods.
     }
 
     void AdStart {
-	Debug.Log ("Tremor Video ad start callback");
+	     Debug.Log ("Tremor Video ad start callback");
     }
 
     void AdComplete (string responseCode) {
@@ -87,6 +88,10 @@ Then, implement the optional callback methods.
     	    Debug.Log ("Error occurred while showing Tremor Video ad");
     	}
     }
+    
+    void AdSkipped () {
+		Debug.Log ("Tremor Video ad is skipped");
+	}
 ```
 **Check if an Ad is ready to be shown**
 
