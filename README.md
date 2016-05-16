@@ -57,7 +57,7 @@ When your application is ready to show the ad, call showAd with the ad’s paren
 ### Optional Steps:
 **Delegate Callbacks**
 
-If your application would like to be notified of ad status, loading, start or completion, you can implement the TremorVideoAd delegate. For example:
+If your application would like to be notified of ad status, loading, start or completion, you can implement the TremorVideoAd delegate methods. For example:
 ```
     TremorVideo.adReadyDelegate = AdReady;
     TremorVideo.adStartDelegate = AdStart;
@@ -65,7 +65,7 @@ If your application would like to be notified of ad status, loading, start or co
     TremorVideo.adSkippedDelegate = AdSkipped;
 ```
 
-Then, implement the optional callback methods.
+Then, implement the corresponding callback methods.
 ```
     void AdReady (string success) {
     	if(success.Equals("true")) {
@@ -80,17 +80,15 @@ Then, implement the optional callback methods.
     }
 
     void AdComplete (string responseCode) {
-    	if(responseCode.Equals("1")) {
+    	if(responseCode.Contains ("true")) {
     	    Debug.Log ("Tremor Video ad was completed successfully");
-    	} else if (responseCode.Equals("0")) {
-    	    Debug.Log ("No Tremor Video as was available at the time");
-    	} else {
+    	} else 
     	    Debug.Log ("Error occurred while showing Tremor Video ad");
     	}
     }
     
     void AdSkipped () {
-		Debug.Log ("Tremor Video ad is skipped");
+		Debug.Log ("Tremor Video ad was skipped");
 	}
 ```
 **Check if an Ad is ready to be shown**
