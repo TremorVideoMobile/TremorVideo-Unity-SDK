@@ -5,7 +5,7 @@
 - Release Note: Please visit [Unity SDK Releases Notes](https://github.com/TremorVideoMobile/TremorVideo-Unity-SDK/wiki/Unity-SDK-Release-Notes) to check details of each iOS SDK release.
 
 # To Download
-Please [contact the publisher team](mailto: PublisherManagement@Tremorvideo.com)  at Tremor Video to download the Unity Plugin which includes iOS and Android SDK 3.12
+Please [contact the publisher team](mailto: PublisherManagement@Tremorvideo.com)  at Tremor Video to download the Unity Plugin which includes latest iOS and Android SDK
 The Unity Plugin ships as a zip file. The zip file includes:
 - **TremorVideo.unitypackage** which includes Unity Plugin and iOS Android SDK
 - **TremorVideoSample** which includes a sample app
