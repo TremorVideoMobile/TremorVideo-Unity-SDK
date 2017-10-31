@@ -1,7 +1,7 @@
 # TremorVideo-Unity-SDK
-- Unity Plugin Version: 1.1.1
-- SDK Version: iOS SDK 3.14.0 and Android SDK 3.14.0
-- Release Date: April 12, 2017 
+- Unity Plugin Version: 1.1.3
+- SDK Version: iOS SDK 3.15.0 and Android SDK 3.15.0
+- Release Date: November 1, 2017 
 - Release Note: Please visit [Unity SDK Releases Notes](https://github.com/TremorVideoMobile/TremorVideo-Unity-SDK/wiki/Unity-SDK-Release-Notes) to check details of each iOS SDK release.
 
 # To Download
